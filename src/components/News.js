@@ -39,7 +39,7 @@ const News = (props) => {
     <div className='continer my-5'>
       <h2 className='text-center' style={{marginTop:"90px"}}>DigiNews-Top {capitalizeFirstLetter(props.category)} Headlines</h2>
       <InfiniteScroll
-        dataLength={articles.length}
+        dataLength={articles?.length}
         next={fetchMoreData}
         hasMore={articles.elngth !== totalResults}
         loader={<Spinner />}
